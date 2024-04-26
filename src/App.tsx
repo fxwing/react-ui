@@ -8,6 +8,8 @@ import {
   RouteObject,
 } from "react-router-dom";
 import Calender from "@/components/Calender";
+import Suspense from "@/components/Suspense";
+import Icon from "@/components/Icon";
 
 const router = createBrowserRouter([
   {
@@ -28,6 +30,16 @@ const router = createBrowserRouter([
         path: "calender",
         id: "calender",
         element: <Calender></Calender>,
+      },
+      {
+        path: "suspense",
+        id: "suspense",
+        element: <Suspense></Suspense>,
+      },
+      {
+        path: "icon",
+        id: "icon",
+        element: <Icon></Icon>,
       },
       {
         path: "*",
