@@ -31,7 +31,7 @@ function B() {
   );
 }
 
-class ErrorBoundary extends React.Component<
+export class ErrorBoundary extends React.Component<
   React.PropsWithChildren<object>,
   { hasError: boolean }
 > {
